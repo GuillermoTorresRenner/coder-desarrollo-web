@@ -4,16 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>C y B Ingeniería y Montajes</title>
   </head>
 
   <body>
     <header>
       <a href=""> <img src="./assets/images/logo.png" alt="Logo Empresa" /></a>
-      <span>Teléfono: +56931126145</span>
-      <span>Email: contacto@cbingeniera.com</span>
-      <span>Horario de Atención: Lunes a viernes de 8:00 a 19:00</span>
+
+      <div class="content-hiddable">
+        <span>Teléfono: </span>
+        <p>+56931126145</p>
+      </div>
+      <div class="content-hiddable">
+        <span>Email: </span>
+        <p>contacto@cbingeniera.com</p>
+      </div>
+      <div class="content-hiddable">
+        <span>Horario de Atención: </span>
+        <p>L a V de 8:00 a 19:00</p>
+      </div>
+
       <div class="redes-sociales">
         <a href="http://" target="_blank" rel="noopener noreferrer">
           <img src="assets/images/facebookIcon.png" alt="Contacto Facebook"
@@ -23,27 +34,120 @@
         /></a>
       </div>
     </header>
-    <nav>
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="./pages/nosotros.html">Nosotros</a></li>
-        <li><a href="./pages/electricidad.html">Electricidad</a></li>
-        <li><a href="./pages/soldaduras.html">Soldaduras</a></li>
-        <li><a href="./pages/construccion.html">Construcción</a></li>
-        <li><a href="./pages/contacto.html">Contacto</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse row justify-content-center"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-primary"
+                aria-current="page"
+                href="/"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="./pages/nosotros.html"
+                >Nosotros</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="./pages/electricidad.html"
+                >Electricidad</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="./pages/soldaduras.html"
+                >Soldaduras</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="./pages/construccion.html"
+                >Construcción</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="./pages/contacto.html"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
+
     <main>
       <section>
-        <div class="baner">
-          <h1>C & B Ingeniería y Montajes</h1>
-          <!-- futuro carrousell -->
-          <img src="./assets/images/logo.png" alt="Carrousell" />
+        <h1 class="text-center text-primary mb-4">
+          C & B Ingeniería y Montajes
+        </h1>
+        <!-- carrousell -->
+        <div
+          id="carouselExampleFade"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3500">
+              <img
+                src="./assets/images/electricidad1.jpeg"
+                class="d-block w-100"
+                alt="Servicios de Electricidad"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3500">
+              <img
+                src="./assets/images/soldadura1.jpeg"
+                class="d-block w-100"
+                alt="Servicios de Soldadura"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3500">
+              <img
+                src="./assets/images/construccion2.jpeg"
+                class="d-block w-100"
+                alt="Servicios de construcción"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </section>
 
       <section>
-        <h2>Nuestros Servicios</h2>
+        <h2 >Nuestros Servicios</h2>
+        <!-- Tarjetas principales -->
         <div class="cards">
           <div class="card">
             <article>
@@ -71,7 +175,6 @@
               </div>
             </article>
           </div>
-
           <div class="card">
             <article>
               <div class="card-header">
@@ -128,7 +231,7 @@
         </div>
       </section>
 
-      <h2>Donde encontrarnos</h2>
+      <h2 class=>Donde encontrarnos</h2>
       <section>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212998.2997250683!2d-70.62983129999999!3d-33.47278795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1684284126657!5m2!1ses!2scl"
@@ -147,10 +250,21 @@
     </main>
 
     <footer>
-      <img src="./assets/images/logo.png" alt="Logo Empresa" />
-      <span>Teléfono: +56931126145</span>
-      <span>Email: contacto@cbingeniera.com</span>
-      <span>Horario de Atención: Lunes a viernes de 8:00 a 19:00</span>
+      <a href=""> <img src="./assets/images/logo.png" alt="Logo Empresa" /></a>
+
+      <div class="content-hiddable">
+        <span>Teléfono: </span>
+        <p>+56931126145</p>
+      </div>
+      <div class="content-hiddable">
+        <span>Email: </span>
+        <p>contacto@cbingeniera.com</p>
+      </div>
+      <div class="content-hiddable">
+        <span>Horario de Atención: </span>
+        <p>L a V de 8:00 a 19:00</p>
+      </div>
+
       <div class="redes-sociales">
         <a href="http://" target="_blank" rel="noopener noreferrer">
           <img src="assets/images/facebookIcon.png" alt="Contacto Facebook"
@@ -160,5 +274,8 @@
         /></a>
       </div>
     </footer>
+
+    <!-- Importación de popper para funcionalidades JS -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
