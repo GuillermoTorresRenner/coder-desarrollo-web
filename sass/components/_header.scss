@@ -1,0 +1,60 @@
+/*======================== encabezado======================= */
+header {
+  background-color: #7c7878;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: whitesmoke;
+
+  img {
+    width: 70px;
+    height: auto;
+    margin-left: 20px;
+  }
+}
+i {
+  margin-right: 20px;
+  color: $active;
+}
+
+.active {
+  background-color: $active;
+}
+nav {
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 20%;
+  }
+}
+
+.nav-link {
+  border-radius: 10px;
+  &:hover {
+    background-color: white;
+    color: $primary;
+  }
+}
+// ====================RESPONSIVE MOBILE====================
+@media only screen and (max-width: 576px) and (orientation: portrait) {
+  .content-hiddable {
+    display: none;
+  }
+
+  // ====================RESPONSIVE TABLET====================
+  @media only screen and (min-width: 577px) and (max-width: 768px) and (orientation: portrait) {
+    .content-hiddable {
+      display: none;
+    }
+  }
+  /* ====================RESPONSIVE DESKTOP=================== */
+
+  @media only screen and (min-width: 768px) {
+    .content-hiddable {
+      display: block;
+      justify-content: space-evenly;
+    }
+  }
+}

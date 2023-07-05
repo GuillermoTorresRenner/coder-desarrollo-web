@@ -1,0 +1,14 @@
+/* Estilos para el formulario */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25%;
+}
+// ====================RESPONSIVE TABLET====================
+@media only screen and (min-width: 577px) and (max-width: 768px) and (orientation: portrait) {
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+  }
+}

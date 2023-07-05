@@ -1,0 +1,26 @@
+@media (max-width: 576px) {
+  .slide {
+    margin: 20px 0;
+    img {
+      height: 30vh;
+    }
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .slide {
+    margin: 20px 0;
+    img {
+      height: 40vh;
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .slide {
+    margin: 20px 0;
+    img {
+      height: 50vh;
+    }
+  }
+}

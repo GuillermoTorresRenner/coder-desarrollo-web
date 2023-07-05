@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/6f65031117.js" crossorigin="anonymous"></script>
     <title>C y B Ingeniería y Montajes</title>
   </head>
 
@@ -26,12 +27,12 @@
       </div>
 
       <div class="redes-sociales">
-        <a href="http://" target="_blank" rel="noopener noreferrer">
-          <img src="assets/images/facebookIcon.png" alt="Contacto Facebook"
-        /></a>
-        <a href="http://" target="_blank" rel="noopener noreferrer">
-          <img src="assets/images/instagramIcon.png" alt="Contacto Instagram"
-        /></a>
+        <a href="https://www.facebook.com/" target="_blank" >
+         <i class="fa-brands fa-facebook fa-3x"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" >
+        <i class="fa-brands fa-instagram fa-3x"></i>
+        </a>
       </div>
     </header>
     <nav class="navbar navbar-expand-lg bg-light">
@@ -105,7 +106,7 @@
             <div class="carousel-item active" data-bs-interval="3500">
               <img
                 src="./assets/images/electricidad1.jpeg"
-                class="d-block w-100"
+                class="d-block w-100 "
                 alt="Servicios de Electricidad"
               />
             </div>
@@ -148,18 +149,19 @@
       <section>
         <h2 >Nuestros Servicios</h2>
         <!-- Tarjetas principales -->
-        <div class="cards">
-          <div class="card">
+        <!-- <div class="grupo-tarjetas">
+          <div class="tarjeta">
             <article>
-              <div class="card-header">
+              <div class="tarjeta-encabezado">
                 <h3>Electricidad</h3>
                 <a href="./pages/electricidad.html">
                   <img
                     src="./assets/images/electricidad1.jpeg"
                     alt="Trabajos eléctricos"
+                    class="expand"
                 /></a>
               </div>
-              <div class="card-body">
+              <div class="tarjeta-cuerpo">
                 <img
                   src="./assets/images/electricidad2.jpeg"
                   alt="Trabajos eléctricos Induatriales"
@@ -175,17 +177,18 @@
               </div>
             </article>
           </div>
-          <div class="card">
+          <div class="tarjeta">
             <article>
-              <div class="card-header">
+              <div class="tarjeta-encabezado">
                 <h3>Soldadura</h3>
                 <a href="./pages/soldaduras.html">
                   <img
                     src="./assets/images/soldadura1.jpeg"
                     alt="Trabajos de Soldadura"
+                    class="expand"
                 /></a>
               </div>
-              <div class="card-body">
+              <div class="tarjeta-cuerpo">
                 <img
                   src="./assets/images/soldadura2.jpeg"
                   alt="Trabajos de Soldadura industrial"
@@ -202,17 +205,17 @@
             </article>
           </div>
 
-          <div class="card">
+          <div class="tarjeta">
             <article>
-              <div class="card-header">
+              <div class="tarjeta-encabezado">
                 <h3>Construcción</h3>
                 <a href="./pages/construccion.html"
                   ><img
                     src="./assets/images/construccion2.jpeg"
                     alt="Trabajos de Construcción"
-                /></a>
+                class="expand"/></a>
               </div>
-              <div class="card-body">
+              <div class="tarjeta-cuerpo">
                 <img
                   src="./assets/images/construccion1.jpeg"
                   alt="Trabajos de Construcción Industrial"
@@ -228,7 +231,105 @@
               </div>
             </article>
           </div>
-        </div>
+        </div> -->
+        <div class="card-group mx-3">
+  <div class="card expand">
+    <h5 class="card-title text-center py-2">Electricidad</h5>
+     <a href="./pages/electricidad.html">
+                  <img
+                    src="./assets/images/electricidad1.jpeg"
+                    alt="Trabajos eléctricos"
+                    class="portada "
+                /></a>
+    <div class="card-body container">
+      <div class="row">
+         <img
+                  src="./assets/images/electricidad2.jpeg"
+                  alt="Trabajos eléctricos Induatriales"
+                  class="col"
+                />
+                <img
+                  src="./assets/images/electricidad3.jpeg"
+                  alt="Trabajos eléctricos Comerciales"
+                  class="col"
+                />
+                <img
+                  src="./assets/images/electricidad4.jpeg"
+                  alt="Trabajos electricos Domiciliarios"
+                  class="col"
+                />
+      </div>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card mx-3 expand">
+    <h5 class="card-title text-center py-2">Soldadura</h5>
+     <a href="./pages/soldaduras.html">
+                  <img
+                    src="./assets/images/soldadura1.jpeg"
+                    alt="Trabajos de Soldadura"
+                    class=" portada"
+                /></a>
+    <div class="card-body container">
+      <div class="row">
+          <img
+                  src="./assets/images/soldadura2.jpeg"
+                  alt="Trabajos de Soldadura industrial"
+                    class="col"
+                  />
+                <img
+                  src="./assets/images/soldadura3.jpeg"
+                  alt="Trabajos de Soldadra Domiciliaria"
+                    class="col"
+                  />
+                <img
+                  src="./assets/images/soldadura4.jpeg"
+                  alt="Trabajos de Soldadura Comercial"
+                    class="col"
+                  />
+      </div>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+   <div class="card expand">
+    <h5 class="card-title text-center py-2">Construcción</h5>
+     <a href="./pages/electricidad.html">
+                   <a href="./pages/construccion.html"
+                  ><img
+                    src="./assets/images/construccion2.jpeg"
+                    alt="Trabajos de Construcción"
+                class=" portada"/></a>
+    <div class="card-body container">
+      <div class="row">
+         <img
+                  src="./assets/images/construccion1.jpeg"
+                  alt="Trabajos de Construcción Industrial"
+                  class="col"
+                  />
+                <img
+                  src="./assets/images/construccion3.jpeg"
+                  alt="Trabajos de Construcción Comercial"
+                  class="col"
+                  />
+                <img
+                  src="./assets/images/construccion4.jpeg"
+                  alt="Trabajos de Construcción para el hogar"
+                  class="col "
+                  />
+      </div>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
       </section>
 
       <h2 class=>Donde encontrarnos</h2>
@@ -266,12 +367,13 @@
       </div>
 
       <div class="redes-sociales">
-        <a href="http://" target="_blank" rel="noopener noreferrer">
-          <img src="assets/images/facebookIcon.png" alt="Contacto Facebook"
-        /></a>
-        <a href="http://" target="_blank" rel="noopener noreferrer">
-          <img src="assets/images/instagramIcon.png" alt="Contacto Instagram"
-        /></a>
+        <a href="http://" target="_blank">
+         <i class="fa-brands fa-facebook fa-2x"></i>
+        </a>
+
+        <a href="http://" target="_blank" >
+        <i class="fa-brands fa-instagram fa-2x"></i>
+        </a>
       </div>
     </footer>
 
