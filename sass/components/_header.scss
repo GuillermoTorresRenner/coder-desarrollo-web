@@ -44,14 +44,14 @@ nav {
   }
 
   // ====================RESPONSIVE TABLET====================
-  @media only screen and (min-width: 577px) and (max-width: 768px) and (orientation: portrait) {
+  @media only screen and (min-width: 577px) and (max-width: 800) {
     .content-hiddable {
       display: none;
     }
   }
   /* ====================RESPONSIVE DESKTOP=================== */
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 801) {
     .content-hiddable {
       display: block;
       justify-content: space-evenly;

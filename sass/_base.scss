@@ -4,6 +4,7 @@
 $light: #7c7878;
 $primary: #db761d;
 $active: #495a6a;
+$warning: #06434d;
 
 /* Resetear estilos y establecer fuentes predeterminadas */
 * {
@@ -29,8 +30,10 @@ h2 {
   text-align: center;
   color: $primary;
 }
-
-/* Secciones */
-section {
-  margin: 50px 0;
+h5 {
+  font-size: 2rem;
+  text-align: center;
+  color: $warning;
+  font-weight: bold;
+  text-decoration: underline;
 }

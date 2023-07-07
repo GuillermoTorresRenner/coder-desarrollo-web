@@ -5,12 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/6f65031117.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>C y B Ingeniería y Montajes</title>
   </head>
 
   <body>
     <header>
-      <a href=""> <img src="../assets/images/logo.png" alt="Logo Empresa" /></a>
+      <a href="/">
+        <img src="../assets/images/logo.png" alt="Logo Empresa"
+      /></a>
 
       <div class="content-hiddable">
         <span>Teléfono: </span>
@@ -26,14 +33,12 @@
       </div>
 
       <div class="redes-sociales">
-        <a href="http://" target="_blank" rel="noopener noreferrer">
-          <img src="../assets/images/facebookIcon.png" alt="Contacto Facebook"
-        /></a>
-        <a href="http://" target="_blank" rel="noopener noreferrer">
-          <img
-            src="../assets/images/instagramIcon.png"
-            alt="Contacto Instagram"
-        /></a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <i class="fa-brands fa-facebook fa-3x"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <i class="fa-brands fa-instagram fa-3x"></i>
+        </a>
       </div>
     </header>
     <nav class="navbar navbar-expand-lg bg-light">
@@ -75,12 +80,12 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary active" href="./construccion.html"
+              <a class="nav-link text-primary " href="./construccion.html"
                 >Construcción</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary" href="./contacto.html"
+              <a class="nav-link text-primary active" href="./contacto.html"
                 >Contacto</a
               >
             </li>
@@ -90,19 +95,11 @@
     </nav>
 
     <main>
-      <!-- carrousell -->
-      <section>
-        <h1 class="text-center text-primary mb-4">
-          C & B Ingeniería y Montajes
-        </h1>
-        <div class="row justify-content-center">
-          <img
-            src="../assets/images/logo.png"
-            class="w-25"
-            alt="Servicios de construcción"
-          />
-        </div>
-      </section>
+      <div class="logo">
+        <img src="../assets/images/logo.png" alt="Logo C&B" />
+      </div>
+
+
 
       <!-- Sección de Contacto -->
 
@@ -147,9 +144,11 @@
   <label for="mensaje" class="form-label">Mensaje</label>
   <textarea class="form-control" id="mensaje" rows="3"></textarea>
 </div>
-          <button type="submit" class="btn btn-success ">
+         <div class="text-center">
+           <button type="submit" class="btn btn-success  px-4">
             Enviar
           </button>
+         </div>
         </form>
        
       </section>

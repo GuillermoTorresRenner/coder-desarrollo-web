@@ -9,30 +9,3 @@
   box-shadow: 18px 16px 19px 6px rgba(0, 0, 0, 0.7);
   border: solid 2px $primary;
 }
-
-// ====================RESPONSIVE MOBILE====================
-.tarjetas {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-@media only screen and (max-width: 576px) and (orientation: portrait) {
-}
-// ====================RESPONSIVE TABLET====================
-@media only screen and (min-width: 577px) and (max-width: 768px) and (orientation: portrait) {
-  // .tarjetas {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
-}
-
-/* =======================================RESPONSIVE DESKTOP====================================================================================== */
-
-@media only screen and (min-width: 768px) {
-  // .tarjetas {
-  //   display: flex;
-  //   flex-flow: nowrap row;
-  //   width: 100%;
-  //   height: 550px;
-  // }
-}
