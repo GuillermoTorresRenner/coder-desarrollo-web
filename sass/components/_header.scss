@@ -42,19 +42,18 @@ nav {
   .content-hiddable {
     display: none;
   }
-
-  // ====================RESPONSIVE TABLET====================
-  @media only screen and (min-width: 577px) and (max-width: 800) {
-    .content-hiddable {
-      display: none;
-    }
+}
+// ====================RESPONSIVE TABLET====================
+@media only screen and (min-width: 577px) and (max-width: 800) {
+  .content-hiddable {
+    display: none;
   }
-  /* ====================RESPONSIVE DESKTOP=================== */
+}
+/* ====================RESPONSIVE DESKTOP=================== */
 
-  @media only screen and (min-width: 801) {
-    .content-hiddable {
-      display: block;
-      justify-content: space-evenly;
-    }
+@media only screen and (min-width: 801) {
+  .content-hiddable {
+    display: block;
+    justify-content: space-evenly;
   }
 }

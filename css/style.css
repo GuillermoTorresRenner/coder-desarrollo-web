@@ -91,17 +91,39 @@ nav ul {
   .content-hiddable {
     display: none;
   }
-  /* ====================RESPONSIVE DESKTOP=================== */
 }
-@media only screen and (max-width: 576px) and (orientation: portrait) and (min-width: 577px) and (max-width: 800) {
+@media only screen and (min-width: 577px) and (max-width: 800) {
   .content-hiddable {
     display: none;
   }
 }
-@media only screen and (max-width: 576px) and (orientation: portrait) and (min-width: 801) {
+/* ====================RESPONSIVE DESKTOP=================== */
+@media only screen and (min-width: 801) {
   .content-hiddable {
     display: block;
     justify-content: space-evenly;
+  }
+}
+@media only screen and (max-width: 576px) and (orientation: portrait) {
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .logo img {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 577px) {
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .logo img {
+    width: 35%;
   }
 }
 @media (max-width: 576px) {
@@ -151,16 +173,6 @@ iframe {
   display: flex;
   flex-direction: column;
   padding: 0 15%;
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-.logo img {
-  width: 50%;
 }
 
 .about-section {
