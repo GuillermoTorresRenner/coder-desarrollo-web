@@ -24,6 +24,17 @@ p {
   font-family: serif;
 }
 
+label {
+  font-family: serif;
+  font-weight: bold;
+  &::first-letter {
+    font-family: "Lato", sans-serif;
+    background-color: $warning;
+    color: $primary;
+    font-size: 1.5rem;
+  }
+}
+
 /* Títulos */
 h1 {
   font-family: "Lato", sans-serif;
@@ -49,4 +60,8 @@ h5 {
 }
 p {
   font-family: "Roboto Slab", serif;
+}
+i {
+  margin-right: 20px;
+  color: $primary;
 }
